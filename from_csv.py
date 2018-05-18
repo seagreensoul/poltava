@@ -2,7 +2,7 @@ import pandas as pd
 import geocoder 
 
 df= pd.read_csv('poltava.csv',sep=';', encoding='cp1251')
-f = open('poltava_geo1.csv', 'w')
+f = open('poltava_geo.csv', 'w')
 f.write("\"lat\";\"lng\"\n")
 
 for adr in df['adress']:
