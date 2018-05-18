@@ -34,4 +34,4 @@ for i in range(30):
     map1.add_child(fg[i])
 
 map1.add_child(folium.LayerControl())
-map1.save(outfile="poltava1.html")
+map1.save(outfile="poltava.html")
