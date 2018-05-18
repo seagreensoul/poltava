@@ -3,8 +3,8 @@ import folium
 import folium.plugins
 import re
 
-df= pd.read_csv('poltava2.csv',sep=';', encoding='cp1251')
-df1=pd.read_csv('poltava_geo2.csv', sep=";")
+df= pd.read_csv('poltava.csv',sep=';', encoding='cp1251')
+df1=pd.read_csv('poltava_geo.csv', sep=";")
 map1 = folium.Map([df1.iloc[0][0],df1.iloc[0][1]],zoom_start=9)
 dark=folium.FeatureGroup(name="darkness")
 fg=[folium.FeatureGroup(name=str(i+1)+" марта", overlay = False) for i in range(30)]
