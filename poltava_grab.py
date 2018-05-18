@@ -8,7 +8,7 @@ xs="/html[1]/body[1]/div[4]/div[1]/div[2]/div[2]/a["
 i=2
 j=1
 
-f = open('poltava2.csv', 'w')
+f = open('poltava.csv', 'w')
 f.write("\"date\";\"time\";\"adress\"\n")
 
 while i<6:
