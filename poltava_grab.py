@@ -1,17 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 26 12:47:19 2018
-
-@author: admin
-"""
-
-
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 #from selenium.webdriver.common.keys import Keys
 
-
-#i=5, j=6
 driver = webdriver.Firefox()
 s="http://vpoltave.info/tag/%D1%81%D0%B2%D1%96%D1%82%D0%BB%D0%BE/page"
 xs="/html[1]/body[1]/div[4]/div[1]/div[2]/div[2]/a["
