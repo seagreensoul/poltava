@@ -13,5 +13,6 @@ for adr in df['adress']:
     try:
         f.write(l[0]+";"+l[1]+"\n")
     except TypeError:
+        f.write('a'+";"+'a')
         continue
 f.close()
