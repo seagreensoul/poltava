@@ -27,7 +27,10 @@ while i<sh:
             print(str(df.iloc[j][2]))
     f=fg[int(s1[0])-1]
     strok+='</table>'
-    f.add_child(folium.Marker(location = [df1.iloc[i][0],df1.iloc[i][1]], popup = folium.Popup(strok ,max_width='auto'), icon = folium.Icon(color = 'orange') ))
+    try:
+        f.add_child(folium.Marker(location = [df1.iloc[i][0],df1.iloc[i][1]], popup = folium.Popup(strok ,max_width='auto'), icon = folium.Icon(color = 'orange') ))
+    except TypeError:
+        continue
     i+=1
 
 for i in range(30):
